@@ -1,0 +1,18 @@
+package employes;
+
+import java.util.GregorianCalendar;
+
+public class Secretaire extends Employes {
+
+
+	protected Secretaire(String leNom, String lePrenom, GregorianCalendar laDate, Adresse lAdresse) {
+		super(leNom, lePrenom, laDate, lAdresse);
+		// TODO Auto-generated constructor stub
+	}
+
+	public void setSalaire(double salaire) {
+		this.salaire=salaire;
+		augmenterLeSalaire((0.5*calculAnnuite()));
+	}
+	
+}

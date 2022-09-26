@@ -1,0 +1,21 @@
+package entier;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Entier {
+	
+	private int entier;
+	
+	public Entier(int entier) {
+		this.entier=entier;
+		
+		
+	}
+	public Entier() {
+		this.entier=0;
+		
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\ulwar\Desktop\ALL\Cours\2023\Atelier_de_prog_java\.metadata\.plugins\org.eclipse.jdt.core
+109770110.index
+89409240.index
+1235282308.index
+1198578435.index
+252011882.index

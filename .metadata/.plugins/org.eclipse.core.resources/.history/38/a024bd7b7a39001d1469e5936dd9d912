@@ -1,0 +1,21 @@
+package entier;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Entier {
+	
+	private int entier;
+	
+	public Entier(int borne_min,int borne_max,int entier) {
+		this.entier=entier;
+		
+		
+	}
+	public Entier(int borne_min,int borne_max) {
+		this.entier=0;
+		
+		
+	}
+
+}

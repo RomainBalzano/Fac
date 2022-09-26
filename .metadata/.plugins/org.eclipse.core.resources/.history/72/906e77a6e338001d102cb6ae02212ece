@@ -1,0 +1,16 @@
+package des;
+
+public class Test_de {
+	public static void main(String[] args) {
+		//System.out.println(newLine);
+		De de1=new De("D1");
+		De de2=new De("D2",8);
+		De de3=new De();
+		System.out.println(de1.getNbFaces());
+		System.out.println(de2.getNbFaces());
+		System.out.println(de3.getNbFaces());
+		
+		
+		
+	}
+}

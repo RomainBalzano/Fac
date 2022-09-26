@@ -1,0 +1,40 @@
+package des;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class De_pipé extends De {
+	private int borne_minimal;
+	
+	public De_pipé(String de_nom, int nb_faces,int borne_minimal) {
+		this.nb_faces=nb_faces;
+		this.de_nom=de_nom;
+		this.borne_minimal=borne_minimal;
+		if (borne_minimal>=this.nb_faces || borne_minimal<0) {
+			System.err.println("Erreur la borne ne peut pas depassé le nombre de face");
+		}
+		nb_de++;
+	}
+	
+	public int Lancer_sucessif(int nb_lancer) {
+		
+		List <Integer> tableau_lancer = new ArrayList();
+		int meilleur_lancer=0;
+		for (int i = 0; i<nb_lancer ; i++) {
+			
+			int face_aleatoire= r.nextInt(this.nb_faces) ;
+			if (face_aleatoire<this.nb_faces) {
+				face_aleatoire=face_aleatoire++;
+			}
+			tableau_lancer.add(face_aleatoire);
+		}
+		for (int j = 0; j < tableau_lancer.size(); j++) {
+			if 	(tableau_lancer.get(j) > meilleur_lancer) {
+				meilleur_lancer=tableau_lancer.get(j);
+			}
+			
+		}
+		return meilleur_lancer;
+	}
+
+}

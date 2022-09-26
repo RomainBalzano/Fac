@@ -1,0 +1,13 @@
+package employes;
+
+import java.util.GregorianCalendar;
+
+public class Manager extends Employes {
+
+	protected Manager(String leNom, String lePrenom, GregorianCalendar laDate, Adresse lAdresse, int salaire) {
+		super(leNom, lePrenom, laDate, lAdresse, salaire);
+		// TODO Auto-generated constructor stub
+	}
+	
+
+}

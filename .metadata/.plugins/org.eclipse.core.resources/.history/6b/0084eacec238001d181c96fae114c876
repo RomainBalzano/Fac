@@ -1,0 +1,8 @@
+package vecteur;
+
+public class Test_Vecteur {
+	Vecteur vecteur1=new Vecteur(3, 2, 5);
+	Vecteur vecteur2=new Vecteur(3, 2, 5);
+	
+
+}

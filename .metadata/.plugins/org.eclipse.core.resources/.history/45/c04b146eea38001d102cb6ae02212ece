@@ -1,0 +1,58 @@
+package des;
+import java.util.*;
+
+
+public class De {
+	private String de_nom;
+	private int nb_faces;
+	private static Random r = new Random();
+	private int nb_de=1;
+
+	
+	public int getNbFaces() {
+		if (this.nb_faces<3 || this.nb_faces>120) {
+			System.err.println("Erreur le nombre de face doit etre compris entre 3 et 120");
+		}
+		return this.nb_faces;
+	}
+	public void setNbFaces(int nbfaces) {
+		this.nb_faces=nbfaces;
+	}
+	public De() {
+		this.nb_faces=6;
+		this.de_nom="De numero "+nb_de;
+		nb_de++;
+	}
+	public De(String de_nom) {
+		this.nb_faces=6;
+		this.de_nom=de_nom;
+		nb_de++;
+	}
+	public De(String de_nom, int nb_faces) {
+		this.nb_faces=nb_faces;
+		this.de_nom=de_nom;
+		nb_de++;
+	}
+	public int Lancer() {
+		int face_aleatoire= r.nextInt(this.nb_faces) ;
+		return face_aleatoire;
+
+	}
+	public int lances_sucessif(int nb_lancer) {
+		
+		List <Integer> tableau_lancer = new ArrayList();
+		int meilleur_lancer=0;
+		for (int i = 0; i<nb_lancer ; i++) {
+			int face_aleatoire= r.nextInt(this.nb_faces) ;
+			tableau_lancer.add(face_aleatoire);
+		}
+		for (int j = 0; j < tableau_lancer.size(); j++) {
+			if 	(tableau_lancer.get(j) > meilleur_lancer) {
+				meilleur_lancer=tableau_lancer.get(j);
+			}
+			
+		}
+		return meilleur_lancer;
+	}
+	
+}

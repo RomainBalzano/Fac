@@ -1,0 +1,25 @@
+package employes;
+
+import java.util.GregorianCalendar;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
+
+public class Employes extends Personne {
+	protected int salaire=0;
+	protected Calendar dateEmplois;
+	protected Employes(String leNom, String lePrenom, GregorianCalendar laDate, Adresse lAdresse) {
+		super(leNom, lePrenom, laDate, lAdresse);
+		this.dateEmplois=Calendar.getInstance();
+		
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void createEmploye(String leNom, String lePrenom, GregorianCalendar laDate, Adresse lAdresse) {
+		if 
+		
+	}
+	
+
+}

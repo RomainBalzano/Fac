@@ -1,0 +1,12 @@
+package entier;
+
+public class Test_entier {
+	public static void main(String[] args) {
+		Entier entier1=new Entier(5,8);
+		Entier entier2=new Entier(5,8,9);
+		Entier entier3=new Entier(5,8,7);
+		Entier_fou entier_fou=new Entier_fou(2,7,9,2);
+		
+	}
+
+}

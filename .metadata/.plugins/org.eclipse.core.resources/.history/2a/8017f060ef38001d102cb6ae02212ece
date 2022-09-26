@@ -1,0 +1,38 @@
+package des;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class De_pipé extends De {
+	private int borne_minimal;
+	
+	public De_pipé(String de_nom, int nb_faces,int borne_minimal) {
+		this.nb_faces=nb_faces;
+		this.de_nom=de_nom;
+		this.borne_minimal=borne_minimal;
+		if (borne_minimal>=this.nb_faces || borne_minimal<0) {
+			System.err.println("Erreur la borne ne peut pas depassé le nombre de face ou etre negatif");
+		}
+		nb_de++;
+	}
+	
+	public int Lancer_pipe(int nb_lancer) {
+		
+		int face_aleatoire= r.nextInt(this.nb_faces) ;
+		int meilleur_lancer=0;
+		
+			
+
+		if (face_aleatoire+borne_minimal<this.nb_faces) {
+			face_aleatoire=face_aleatoire+borne_minimal;
+			}
+		else
+			{
+				face_aleatoire=this.nb_faces;
+			}
+		
+		
+		return face_aleatoire;
+	}
+
+}

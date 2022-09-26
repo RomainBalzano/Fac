@@ -1,0 +1,37 @@
+package des;
+import java.util.*;
+
+
+public class De {
+	private String de_nom;
+	private int nb_faces;
+	private static Random r = new Random();
+
+	
+	public int getNbFaces() {
+		if (this.nb_faces<3 || this.nb_faces>120) {
+			System.err.println("Erreur le nombre de face doit etre compris entre 3 et 120");
+		}
+		return this.nb_faces;
+	}
+	public void setNbFaces(int nbfaces) {
+		this.nb_faces=nbfaces;
+	}
+	public De() {
+		this.nb_faces=6;
+		this.de_nom="De";
+	}
+	public De(String de_nom) {
+		this.nb_faces=6;
+		this.de_nom=de_nom;
+	}
+	public De(String de_nom, int nb_faces) {
+		this.nb_faces=nb_faces;
+		this.de_nom=de_nom;
+	}
+	public int Lancer() {
+		int nbAleatoire= r.nextInt(this.nb_faces) ;
+
+	}
+	
+}

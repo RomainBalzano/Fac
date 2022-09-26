@@ -1,0 +1,87 @@
+package robot;
+
+public class robot {
+	private String ref_robot;
+	private String nom_robot;
+	
+	private static int coordonne_x;
+	private static int coordonne_y;
+	private static int orientation;
+	
+	private static int nb_robot;
+	
+	
+	
+	public robot(String nom_robot,int coordonne_x,int coordonne_y,int orientation) {
+		this.nom_robot=nom_robot;
+		this.coordonne_x=coordonne_x;
+		this.coordonne_y=coordonne_y;
+		this.orientation=orientation;
+		this.nb_robot++;
+		String ref_robot=("ROB"+(nb_robot));
+		this.ref_robot=ref_robot;
+		
+	}
+	public robot(String nom_robot) {
+		this.nom_robot=nom_robot;
+		this.coordonne_x=0;
+		this.coordonne_y=0;
+		
+		this.orientation=0;
+		this.nb_robot++;
+		String ref_robot=("ROB"+(nb_robot));
+		this.ref_robot=ref_robot;
+	}
+	public void Deplacer(){
+	
+		if (robot.orientation==1) {
+			robot.coordonne_y++;
+			
+		}
+		else if (robot.orientation==2) {
+			robot.coordonne_x++;
+			
+		}
+		else if (robot.orientation==3) {
+			if (robot.coordonne_y != 0) {
+				robot.coordonne_y--;
+			
+				}
+			
+		}	
+		
+		else if (robot.orientation==4) {
+			if (robot.coordonne_x != 0) {
+			robot.coordonne_x--;
+		
+			}
+		}
+	}
+	public void afficheToi() {
+		System.out.print("Nom du robot :"+ nom_robot);
+		System.out.print(" Coordonnées des abs:"+this.coordonne_x);
+		System.out.print(" Coordonnées des ord:" + this.coordonne_y);
+		String[] coordonne_tab = new String[] { "NORD","EST","SUD","OUEST" };
+		
+		if (this.orientation==1){
+			String direction=coordonne_tab[0];
+		}
+		else if (this.orientation==2) {
+			String direction=coordonne_tab[1];
+		}
+		else if (this.orientation==3) {
+			String direction=coordonne_tab[2];
+			
+		}
+			
+		else if (this.orientation==4) {
+			String direction=coordonne_tab[3];
+			
+		System.out.print(" Orientation: "+direction);
+		System.out.print(" Ref du robot: "+ref_robot);
+		}
+	
+		
+
+	}
+}

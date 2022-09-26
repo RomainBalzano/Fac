@@ -1,0 +1,31 @@
+package entier;
+
+public class Entier_fou extends Entier {
+	public Entier_fou(int borne_min, int borne_max, int entier) {
+		super(borne_min, borne_max, entier);
+		this.niveau_folie=niveau_folie;
+	
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+
+
+	protected int niveau_folie;
+	
+
+
+	
+
+
+	public void incrementer() {
+		if (this.entier >= this.borne_min && this.entier<= this.borne_max) {
+			this.entier++;
+		}
+	}
+
+
+
+}

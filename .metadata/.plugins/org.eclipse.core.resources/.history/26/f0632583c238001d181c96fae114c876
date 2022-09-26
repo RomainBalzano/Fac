@@ -1,0 +1,27 @@
+package vecteur;
+
+public class Vecteur {
+	private  int x,y,z;
+	
+	public Vecteur() {
+		this.x=0;
+		this.y=0;
+		this.z=0;
+	
+	}
+	public Vecteur(int x,int y,int z) {
+		this.x=x;
+		this.y=y;
+		this.z=z;
+	
+	}
+	
+	public int Produit_scalaire(Vecteur vecteur) {
+		int scalaire=this.x*vecteur.x+this.y*vecteur.y+this.z+vecteur.z
+		return scalaire;
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package employes;
+
+import java.util.GregorianCalendar;
+
+public class Employes extends Personne {
+	protected int salaire=0;
+	protected GregorianCalendar dateEmplois;
+	protected Employes(String leNom, String lePrenom, GregorianCalendar laDate, Adresse lAdresse) {
+		super(leNom, lePrenom, laDate, lAdresse);
+		
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void createEmploye(String leNom, String lePrenom, GregorianCalendar laDate, Adresse lAdresse) {
+		if 
+		
+	}
+	
+
+}

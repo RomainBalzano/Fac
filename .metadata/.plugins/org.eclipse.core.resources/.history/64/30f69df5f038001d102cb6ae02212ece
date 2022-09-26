@@ -1,0 +1,7 @@
+package des;
+
+public class De_memoire extends De {
+	
+	
+
+}

@@ -1,0 +1,9 @@
+package vecteur;
+
+public class Test_Vecteur {
+	Vecteur vecteur1=new Vecteur(3.0, 2.0, 5.0);
+	Vecteur vecteur2=new Vecteur(3, 2, 5);
+	somme=vecteur1.Somme_scalaire(vecteur2);
+	
+
+}

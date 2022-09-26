@@ -1,0 +1,52 @@
+package entier;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Entier {
+	
+	private int entier;
+	private int borne_min,borne_max;
+	final private int valeur_default=borne_min;
+	
+	
+	public Entier(final int borne_min,final int borne_max,int entier) {
+		if (entier >= borne_min && entier<= borne_max) {
+			this.entier=entier;
+			this.borne_min= borne_min;
+			this.borne_max=borne_max;
+		}
+		else {
+			System.err.println("Erreur le nombre doit etre compris entre" +borne_min+" et "+ borne_max);
+		}
+		
+		
+	}
+	public Entier(int borne_min,int borne_max) {
+		this.entier=valeur_default;
+		this.borne_min=borne_min;
+		this.borne_max=borne_max;
+		
+		
+	}
+	public void set_Entier(int entier) {
+		if (entier >= borne_min && entier<= borne_max) {
+			this.entier=entier;
+		}
+	
+	}
+	public void incrementer() {
+		if (entier >= borne_min && entier<= borne_max) {
+			this.entier++;
+		}
+	}
+	public void incrementer(int pas) {
+		if (entier >= borne_min && entier<= borne_max) {
+			this.entier=this.entier+pas;
+		}
+	}
+	public String toString() {
+		return "L'entier est de "+Integer.toString(this.entier)+" compris entre la valeur "+ Integer.toString(this.borne_min) +" et "+Integer.toString(this.borne_max);
+	}
+
+}

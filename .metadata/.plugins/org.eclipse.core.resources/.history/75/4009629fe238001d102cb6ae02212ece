@@ -1,0 +1,22 @@
+package des;
+
+public class De {
+	private String de_nom;
+	private int nb_faces;
+	
+	public int getNbFaces() {
+		return this.nb_faces;
+	}
+	public void setNbFaces(int nbfaces) {
+		this.nb_faces=nbfaces;
+	}
+	public De() {
+		this.nb_faces=6;
+		this.de_nom="De";
+	}
+	public De(String de_nom, int nb_faces) {
+		this.nb_faces=nb_faces;
+		this.de_nom=de_nom;
+	}
+	
+}

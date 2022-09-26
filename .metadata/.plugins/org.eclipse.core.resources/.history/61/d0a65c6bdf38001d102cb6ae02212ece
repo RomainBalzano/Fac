@@ -1,0 +1,12 @@
+package api_java;
+
+public class Api {
+
+}
+//MATH
+// 1  : 2 attribut
+//2 : Ce sont des methodes et des attributs mathematiques
+//3 : La methode est random() et c'est une methode d'instance qui a pour signature un double
+//4 :Il y en a 4, la difference est le type qu'elle recoit et le type qu'elle renvoie
+//5 la premiere est inccorecte car la methode necessite 2 attributs minimum, la seconde est correcte et renvoie 6.
+//6

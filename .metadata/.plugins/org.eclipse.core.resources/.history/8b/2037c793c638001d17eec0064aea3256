@@ -1,0 +1,44 @@
+package vecteur;
+
+public class Test_Vecteur {
+	public static void main(String[] args) {
+		Vecteur vecteur1=new Vecteur(3, 2, 5);
+		Vecteur vecteur2=new Vecteur(3, 2, 5);
+		
+		float produit= vecteur1.Produit_scalaire(vecteur2);
+		float produit_dynamique=vecteur1.Produit_scalaire(vecteur1,vecteur2);
+		Vecteur somme=vecteur1.Somme_scalaire(vecteur2);
+		Vecteur somme_statique=vecteur1.Somme_scalaire(vecteur1,vecteur2);
+		String newLine = System.getProperty("line.separator");
+		
+		System.out.println("v1=");
+		vecteur1.Affichage();
+		System.out.println(newLine);
+		System.out.println("v2=");
+		vecteur2.Affichage();
+		System.out.println(newLine);
+		System.out.println("v1+v2=");
+		somme.Affichage();
+		System.out.println(newLine);
+		System.out.println("v1+v2=");
+		somme_statique.Affichage();
+		System.out.println(newLine);
+		System.out.println("v1.v2=");
+		System.out.println(produit);
+		System.out.println(newLine);
+		System.out.println("v1.v2=");
+		System.out.println(produit_dynamique);
+		
+		
+		
+	}
+
+
+
+
+
+	
+		
+	
+
+}

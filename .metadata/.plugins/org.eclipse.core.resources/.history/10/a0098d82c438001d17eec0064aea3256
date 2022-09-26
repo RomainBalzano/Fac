@@ -1,0 +1,41 @@
+package vecteur;
+
+public class Vecteur {
+	private   float x,y,z;
+	
+	public Vecteur() {
+		this.x=0;
+		this.y=0;
+		this.z=0;
+	
+	}
+	public Vecteur( float x, float y, float z) {
+		this.x=x;
+		this.y=y;
+		this.z=z;
+	
+	}
+	
+	public float Produit_scalaire(Vecteur vecteur) {
+		float scalaire=this.x*vecteur.x + this.y*vecteur.y + this.z*vecteur.z;
+		return scalaire;
+		
+		
+	}
+	public float Produit_scalaire(Vecteur vecteur, Vecteur vecteur2) {
+		float scalaire=vecteur2.x*vecteur.x+vecteur2.y*vecteur.y+vecteur2.z+vecteur.z;
+		return scalaire;
+		
+	}
+	public Vecteur Somme_scalaire(Vecteur vecteur) {
+		Vecteur Somme=new Vecteur(this.x+vecteur.x,this.y+vecteur.y,this.z+vecteur.z);
+		return Somme;
+	}
+	
+	public Vecteur Somme_scalaire(Vecteur vecteur,Vecteur vecteur2) {
+		Vecteur Somme=new Vecteur(vecteur.x+vecteur2.x, vecteur.y+vecteur2.y, vecteur.z+vecteur2.z);
+		return Somme;
+	}
+	
+
+}

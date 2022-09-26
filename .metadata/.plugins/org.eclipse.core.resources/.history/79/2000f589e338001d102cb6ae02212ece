@@ -1,0 +1,7 @@
+package des;
+
+public class Test_de {
+	public static void main(String[] args) {
+		System.out.println(newLine);
+	}
+}
