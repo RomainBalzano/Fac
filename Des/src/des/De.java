@@ -6,7 +6,7 @@ public class De {
 	protected String de_nom;
 	protected int nb_faces;
 	
-	protected static int nb_de=1;
+	protected static int nb_de=0;
 	final protected int  faces_default=6;
 
 	
