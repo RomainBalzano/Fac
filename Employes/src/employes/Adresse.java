@@ -67,7 +67,7 @@ public class Adresse {
 		return code_postal;
 	}
 	/**
-	 * @param code_postal le code postal pour assignation.
+	 * @param "code_postal" le code postal pour assignation.
 	 */
 	public final void  setCode_postal(String c_p){
 		if (code_postal.equals(INCONNU_CHAINE)&&(c_p.matches("[0-9]{5}")))
@@ -89,7 +89,7 @@ public class Adresse {
 		return numero;
 	}
 	/**
-	 * @param numero le numéro pour attribution, il doit être positif
+	 * @param "numero" le numéro pour attribution, il doit être positif
 	 */
 	public final void  setNumero(int n) {
 		if (((numero==AUCUN_NUMERO)||(numero==INUTILE_NUMERO))&&(n>0)) numero = n;
@@ -102,7 +102,7 @@ public class Adresse {
 		return rue;
 	}
 	/**
-	 * @param rue la rue pour attribution.
+	 * @param "rue" la rue pour attribution.
 	 */
 	public void setRue(String r) {
 		rue = r;

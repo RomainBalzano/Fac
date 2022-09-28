@@ -1,7 +1,7 @@
 package employes;
 
 import java.util.*;
-import employes.Adresse;
+
 
 
 public class Personne{
@@ -15,7 +15,7 @@ public class Personne{
 	/**
 	 * Constructeur de Personne
 	 * @param leNom le nom de la personne
-	 * @param lePrenom le prénom de la personne
+	 * @param lePrenom le prï¿½nom de la personne
 	 * @param laDate la date de naissance de la personne
 	 * @param lAdresse l'adresse de la personne
 	 */
@@ -30,11 +30,11 @@ public class Personne{
 	/** 
 	 * Constructeur de Personne
 	 * @param leNom le nom de la personne
-	 * @param lePrenom le prénom de la personne
+	 * @param lePrenom le prï¿½nom de la personne
 	 * @param j le jour de naissance
 	 * @param m le mois de naissance
-	 * @param a l'année de naissance
-	 * @param numero le n° de la rue
+	 * @param a l'annï¿½e de naissance
+	 * @param numero le nï¿½ de la rue
 	 * @param rue la rue
 	 * @param code_postal le code postal de l'adresse
 	 * @param ville la ville ou la personne habite
@@ -52,7 +52,7 @@ public class Personne{
 	}
 	/**
 	 * Accesseur
-	 * @return retourne le prénom
+	 * @return retourne le prï¿½nom
 	 */
 	public String getPrenom(){
 		return prenom;
@@ -73,7 +73,7 @@ public class Personne{
 	}
 	/**
 	 * Modificateur
-	 * @param retourne l'adresse	 
+	 * @param "retourne" l'adresse
 	 */
 	public int getNb_personne() {
 		return nb_personne;
@@ -89,15 +89,22 @@ public class Personne{
 		return this.dateNaissance.before(personne2.dateNaissance);
 	}
 	public boolean equals(Personne personne2) {
-		return this.nom==personne2.nom && this.prenom==personne2.prenom && this.dateNaissance.equals(personne2.dateNaissance);
+
+		boolean result = false;
+		if(personne2!= null && personne2 instanceof Personne) {
+			Personne personne =(Personne) personne2;
+			result = (this.nom.equals(personne2.nom)) && (this.prenom.equals(personne2.prenom)) && (this.dateNaissance.equals(personne2.dateNaissance) );
+		}
+		return result;
+
 	}
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	public String toString(){
 		String result="\nNom : "+nom+"\n"
-		+"PrŽnom : "+prenom+"\n"+
-		"NŽ(e) le : "+dateNaissance.get(Calendar.DAY_OF_MONTH)+
+		+"Prï¿½nom : "+prenom+"\n"+
+		"Nï¿½(e) le : "+dateNaissance.get(Calendar.DAY_OF_MONTH)+
 		"-"+dateNaissance.get(Calendar.MONTH)+
 		"-"+dateNaissance.get(Calendar.YEAR)+"\n"+
 		"Adresse : "+

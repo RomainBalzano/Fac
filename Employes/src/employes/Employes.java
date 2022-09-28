@@ -22,11 +22,11 @@ public class Employes extends Personne {
 	
 	static public Employes createEmploye(String leNom, String lePrenom, GregorianCalendar laDate, Adresse lAdresse) {
 		Calendar date_maintenant = Calendar.getInstance();
-		int année_maintenant=date_maintenant.get(Calendar.YEAR);
+		int annee_maintenant=date_maintenant.get(Calendar.YEAR);
 		int mois_maintenant=date_maintenant.get(Calendar.MONTH);
 		int jour_maintenant=date_maintenant.get(Calendar.DAY_OF_MONTH);
 		
-		if ((année_maintenant-laDate.get(Calendar.YEAR))==AGE_MIN) {
+		if ((annee_maintenant-laDate.get(Calendar.YEAR))==AGE_MIN) {
 			if (mois_maintenant==laDate.get(Calendar.MONTH)) {
 				if(jour_maintenant<laDate.get(Calendar.DAY_OF_MONTH)) {
 					Employes employes=new Employes(leNom, lePrenom,  laDate,  lAdresse);
@@ -39,7 +39,7 @@ public class Employes extends Personne {
 			}
 			
 		}
-		else if ((année_maintenant-laDate.get(Calendar.YEAR))==AGE_MAX) {
+		else if ((annee_maintenant-laDate.get(Calendar.YEAR))==AGE_MAX) {
 			if (mois_maintenant==laDate.get(Calendar.MONTH)) {
 				if(jour_maintenant>laDate.get(Calendar.DAY_OF_MONTH)) {
 					Employes employes=new Employes(leNom, lePrenom,  laDate,  lAdresse);
@@ -66,8 +66,8 @@ public class Employes extends Personne {
 	}
 	public int calculAnnuite() {
 		Calendar date_maintenant = Calendar.getInstance();
-		int année_maintenant=date_maintenant.get(Calendar.YEAR);
-		return (année_maintenant-this.dateEmplois.get(Calendar.YEAR))+1;
+		int annee_maintenant=date_maintenant.get(Calendar.YEAR);
+		return (annee_maintenant-this.dateEmplois.get(Calendar.YEAR))+1;
 	}
 	
 
