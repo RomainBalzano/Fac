@@ -30,12 +30,12 @@ public class Case {
 
     public int getPenalite(){
 
-        int panalite;
+        int panalite=0;
         if (this.obs!=null){
             panalite=obs.getPenalite();
-            return panalite;
+
         }
-         return 0;
+         return panalite;
     }
     public void placerPersonnage(Personnage perso){
         this.perso=perso;
@@ -45,17 +45,17 @@ public class Case {
         this.obs=obs;
 
     }
-    public void enleverPersonnage(){
+    public void enleverPersonnages(){
 
         this.perso=null;
     }
     public boolean sansObstacle(){
-        boolean verification= getPenalite() == 0;
-        return verification;
+
+        return getPenalite() == 0;
     }
     public boolean sansPerso(){
-        boolean verification= perso == null;
-        return verification;
+
+        return perso == null;
     }
     public boolean estLibre(){
         boolean verification= sansObstacle() && sansPerso();
