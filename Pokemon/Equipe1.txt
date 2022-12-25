@@ -1,0 +1,1 @@
+Abo;Arbok;NULL;30;25;50;0;Poison;NULL;25;0,Pikachu;Raichu;NULL;4;15;1;0;Electrik;NULL;15;0,Dardargnan;Coconfort;Dardargnan;109;75;127;14;Insecte;Poison;129;2,Chenipan;Chrysacier;Papilusion;41;58;32;0;Insecte;Vol;58;0

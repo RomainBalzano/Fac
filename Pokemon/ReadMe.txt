@@ -1,0 +1,3 @@
+Tout d'abord je tiens a m'excuser du retard mais mon probleme de pc qui a durer toute la semaine et le covid juste avant les vacances j'ai pris beaucoup de retard.Je n'ai pas reussi aussi a bien faire le serveur du coup j'ai remplacé cela par de l'affichage avec un menu.J'ai malheuresement pas eu le temps de mettre l'attaque statue.
+
+En dependance il suffit juste d'installer appache io et par la suite on peut executer le programme via le main de dresseur

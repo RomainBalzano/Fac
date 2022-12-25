@@ -1,0 +1,1 @@
+Aspicot;Coconfort;Dardargnan;37;12;64;0;Insecte;Poison;12;0,Pikachu;Raichu;NULL;4;15;1;0;Electrik;NULL;15;0,Abo;Arbok;NULL;30;25;50;0;Poison;NULL;25;0,Chenipan;Chrysacier;Papilusion;41;58;32;0;Insecte;Vol;58;0
